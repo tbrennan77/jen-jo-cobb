@@ -1,0 +1,42 @@
+@import "common/variables";
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+@import "layouts/body";
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/all.css";
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/search";
+@import "layouts/navbar";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+@import "layouts/home";
+
+/* Small devices (phone, 300px and up) */
+@media (min-width: 300px) { 
+	.desktop-only {
+		display: none;
+	}
+	.mobile-only {
+		display: block;
+	}
+}
+
+/* Large devices (phone, 992px and up) */
+@media (min-width: 992px) { 
+	.desktop-only {
+		display: block;
+	}
+	.mobile-only {
+		display: none;
+	}
+}

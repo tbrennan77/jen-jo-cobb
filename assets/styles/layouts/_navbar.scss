@@ -1,0 +1,25 @@
+.navbar-header {
+	padding: 15px 0;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.navbar-header-scroll {
+	padding: 3px 0;
+}
+.nav-scroll {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	margin: 5px 0px;
+}
+.navbar {
+    position: relative;
+    padding: .5rem 1rem;
+
+    @media (max-width: 768px) {
+	    padding: 0rem 1rem;
+	}
+}

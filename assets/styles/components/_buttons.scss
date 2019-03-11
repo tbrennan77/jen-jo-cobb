@@ -1,0 +1,10 @@
+.btn-secondary {
+	color: $brand-grey;
+	background-color: $color-font-white;
+	border: 2px solid $brand-grey;
+}
+.btn-secondary:hover {
+	color: $color-font-white;
+	background-color: $brand-red;
+	border: 2px solid $color-font-white;
+}

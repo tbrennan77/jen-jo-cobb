@@ -1,0 +1,61 @@
+// Grid settings
+$enable-flex:           true;
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Path settings
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Brand colors
+$brand-red:		rgba(255, 0, 0, 1);	   	//#ff0000
+$brand-grey:	rgba(038, 038, 038, 1); //#262626;
+
+// Secondary brand colors
+$brand-blue:	rgba(155, 170, 201, 1); //#9baac9
+$brand-blue-lt:	rgba(200, 208, 226, 1); //#c8d0e2
+$brand-teal:	rgba(175, 223, 220, 1); //#afdfdc
+$brand-teal-lt:	rgba(214, 238, 237, 1); //#d6eeed
+$brand-green:	rgba(197, 219, 168, 1); //#c5dba8;
+$brand-green-lt:rgba(224, 236, 209, 1); //#e0ecd1;
+$brand-gold: 	rgba(227, 215, 181, 1); //#e3d7b5;
+$brand-gold-lt:	rgba(241, 235, 217, 1); //#f1ebd9;
+$brand-pink:	rgba(251, 211, 201, 1); //#fbd3c9;
+$brand-pink-lt:	rgba(253, 232, 226, 1); //#fde8e2;
+
+$color-bg-red:		#cc3333;
+$color-bg-brown:	#f1ede1;
+$color-bg-lt-brown:	#f9f6ef;
+$color-bg-white:	#ffffff;
+$brand-red-gray: #384e5e;
+
+$color-font-white:		#ffffff; //f9f4e9
+$color-font-red:		#cc3333;
+$color-font-lt-blue:	#65a5cd;
+$color-font-lt-blue-alt:#74b9d6;
+$color-font-default: 	#183244;
+$color-font-dk-blue:	#213643;
+$color-font-dk-blue-alt:#002835;
+
+$color-border-blue:		#3c6273;
+$color-border-red:		#e46b6b;
+$color-border-lt-brown:	#e8e3d9;
+$color-border-lt-blue:	#426c86;
+$color-border-lt-blue-2: #577b93;
+
+$color-hyperlink:			#0056a1;
+
+// Font-Families
+$font-primary:			proxima-nova, sans-serif;
+$font-alt:				adobe-caslon-pro, serif;
+
+// Font-Weights
+$font-bold:				900;
+$font-light:			300;
+
+$text-shadow-default:	0px 2px 0px rgba(14, 23, 29, 0.43);
+$text-shadow-alt:		0px 2px 0px rgba(255, 255, 255, 0.43);
+$box-shadow:			0 0 10px rgba(0,0,0,0.2);

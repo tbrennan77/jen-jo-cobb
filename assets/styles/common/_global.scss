@@ -1,0 +1,51 @@
+h1, h2, h4, h4, p, ul, a {
+	font-family: $font-primary;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1;
+}
+h1 {
+	font-family: $font-primary;
+	font-weight: 900;
+	font-size: 4em;
+	color: $brand-grey;
+	margin-bottom: 30px;
+	word-break: break-word;
+	
+	@media (max-width: 768px) {
+	    font-size: 3em;
+	}
+}
+h2 {
+	font-family: $font-primary;
+	font-weight: 700;
+	font-size: 2.75em;
+	color: $brand-red;
+	margin-bottom: 20px;
+
+	@media (max-width: 768px) {
+	    font-size: 2em;
+	}
+}
+h3 {
+	font-family: $font-primary;
+	font-weight: 700;
+	font-size: 1.4em;
+	color: $brand-red;
+	margin-bottom: 10px;
+}
+a {
+	color: $brand-red;
+}
+.entry-content p a:hover {
+	color: $color-font-white;
+	background-color: $brand-red;
+	border-bottom-width: 0px;
+	text-decoration: none;
+}
+ul {
+	margin-left: 0;
+}
+p {
+	line-height: 1.5em;
+}

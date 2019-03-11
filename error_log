@@ -1,0 +1,28 @@
+[08-Feb-2018 20:22:17 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/single.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/single.php on line 1
+[08-Feb-2018 20:22:20 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/single.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/single.php on line 1
+[08-Mar-2018 13:11:46 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/index.php on line 1
+[07-Apr-2018 21:24:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/index.php on line 1
+[08-Apr-2018 08:46:32 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/404.php on line 1
+[12-Apr-2018 15:47:11 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/archive.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/archive.php on line 1
+[06-May-2018 18:57:30 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/crownecl/public_html/realestatedealtalk/wp-content/themes/redt/404.php on line 1

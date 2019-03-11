@@ -1,0 +1,31 @@
+.tribe-events-list-widget .tribe-event-featured .tribe-event-image {
+	display: none;
+}
+.tribe-events-list-widget {
+	margin-top: 30px;
+}
+.tribe-events-list-widget { 
+	h2 {
+		text-transform: uppercase;
+	    color: #3a3a3a;
+	    margin-bottom: 5px;
+	    text-align: right;
+	}
+	.tribe-events-widget-link a {
+		color: #0ea0d7;
+		text-align: right;
+	}
+}
+.tribe-event-title {
+	text-transform: uppercase;
+    color: #3a3a3a;
+    margin-bottom: 5px;
+    text-align: right;
+}
+.tribe-events-list-widget .tribe-list-widget {
+	padding-left: 0;
+}
+.tribe-events-list-widget .tribe-event-featured, .tribe-events-venue-widget .tribe-event-featured, .tribe-mini-calendar-list-wrapper .tribe-event-featured, .tribe-events-adv-list-widget .tribe-event-featured .tribe-mini-calendar-event {
+	background-color: #3a3a3a !important;
+    text-align: right;
+}
