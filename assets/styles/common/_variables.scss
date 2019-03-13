@@ -13,6 +13,7 @@ $sidebar-sm-columns:    4;
 // Brand colors
 $brand-red:		rgba(255, 0, 0, 1);	   	//#ff0000
 $brand-grey:	rgba(038, 038, 038, 1); //#262626;
+$brand-dk-purple: rgba(72, 16, 43, 1);
 
 // Secondary brand colors
 $brand-blue:	rgba(155, 170, 201, 1); //#9baac9
@@ -23,7 +24,7 @@ $brand-green:	rgba(197, 219, 168, 1); //#c5dba8;
 $brand-green-lt:rgba(224, 236, 209, 1); //#e0ecd1;
 $brand-gold: 	rgba(227, 215, 181, 1); //#e3d7b5;
 $brand-gold-lt:	rgba(241, 235, 217, 1); //#f1ebd9;
-$brand-pink:	rgba(251, 211, 201, 1); //#fbd3c9;
+$brand-pink: 	rgba(241, 142, 186, 1); //#f18eba
 $brand-pink-lt:	rgba(253, 232, 226, 1); //#fde8e2;
 
 $color-bg-red:		#cc3333;
@@ -33,7 +34,7 @@ $color-bg-white:	#ffffff;
 $brand-red-gray: #384e5e;
 
 $color-font-white:		#ffffff; //f9f4e9
-$color-font-red:		#cc3333;
+$color-font-red:		#e6314f;
 $color-font-lt-blue:	#65a5cd;
 $color-font-lt-blue-alt:#74b9d6;
 $color-font-default: 	#183244;
@@ -49,8 +50,9 @@ $color-border-lt-blue-2: #577b93;
 $color-hyperlink:			#0056a1;
 
 // Font-Families
-$font-primary:			proxima-nova, sans-serif;
-$font-alt:				adobe-caslon-pro, serif;
+$font-primary:			'Open Sans', sans-serif;
+$font-alt:				futura-pt, sans-serif;
+$font-header-bold:		futura-pt-bold, sans-serif;
 
 // Font-Weights
 $font-bold:				900;

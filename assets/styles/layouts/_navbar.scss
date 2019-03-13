@@ -8,6 +8,21 @@
 .navbar-header-scroll {
 	padding: 3px 0;
 }
+.nav-link,
+.navbar-light .navbar-nav .nav-link,
+.mega-menu-link {
+	color: $color-font-white;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.mega-current-menu-item .mega-menu-link {
+	color: $color-font-red;
+}
+.nav-link:hover,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active:hover,
+,mega-menu-link:hover {
+	color: $brand-pink;
+}
 .nav-scroll {
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -21,5 +36,80 @@
 
     @media (max-width: 768px) {
 	    padding: 0rem 1rem;
+	}
+}
+
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation {
+	background: transparent;
+	padding: 5px 0px 10px 0px;
+}
+.navbar-header {
+	padding: 0 0 0 0 !important;
+}
+
+// Max Mega Menu styles
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, 
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, 
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link,
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link {
+	font-family: $font-header-bold;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link:hover {
+	color: $brand-pink;
+}
+.navbar-header-scroll #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation>li.mega-menu-item>a.mega-menu-link:hover, 
+.navbar-header-scroll a.mega-menu-link:hover {
+	color: $brand-pink;
+}
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li.mega-menu-item.mega-show-when-sticky {
+	display: none;
+}
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li.mega-menu-item.mega-hide-when-sticky {
+	display: inline-block;
+}
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li.mega-hide-on-mobile {
+	display: none;
+}
+@media (max-width: 768px) {
+	#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li.mega-hide-on-mobile {
+	    display: none !important ;
+	}
+	#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link {
+		padding-left: 30px;
+	}
+	.navbar-header-scroll {
+		#mega-menu-wrap-primary_navigation .mega-menu-toggle + #mega-menu-primary_navigation {
+			background: $color-bg-white;
+		}
+	}
+}
+
+#mega-toggle-block-1 {
+	display: block !important;
+}
+#mega-toggle-block-2 {
+	display: none !important;
+}
+
+.navbar-header-scroll {
+	#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li.mega-menu-item.mega-show-when-sticky {
+		display: inline-block;
+	}
+	#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li.mega-menu-item.mega-hide-when-sticky {
+		display: none;
+	}
+	a.mega-menu-link,
+	#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item > a.mega-menu-link {
+		color: $brand-grey;
+		height: 40px;
+		line-height: 40px;
+	}
+	#mega-toggle-block-2 {
+		display: block !important;
+	}
+	#mega-toggle-block-1 {
+		display: none !important;
 	}
 }
