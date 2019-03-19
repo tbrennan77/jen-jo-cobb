@@ -1,5 +1,5 @@
 header {
-	background-color: $brand-grey;
+	background-color: $brand-dk-purple;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	-o-transition: all 0.4s ease;
@@ -23,5 +23,43 @@ header:active {
 	-moz-transition: all 0.4s ease;
 	-o-transition: all 0.4s ease;
 	transition: all 0.4s ease;
+	box-shadow: $box-shadow;
 	height: 60px;
+
+	@media (max-width: 969px) {
+	    height: 50px;
+	}
+}
+.navbar-toggler {
+	display: none;
+	color: $color-font-white;
+	font-size: 2em;
+	float: right;
+	padding: .25rem 0 .25rem .75rem;
+
+	@media (max-width: 969px) {
+	    display: block;
+	}
+}
+.mobile-menu {
+	display: none;
+
+	@media (max-width: 969px) {
+	    display: block;
+	}
+}
+.desktop-menu {
+	display: block;
+	text-align: center;
+
+	@media (max-width: 969px) {
+	    display: none;
+	}
+}
+.social-menu {
+	display: block;
+
+	@media (max-width: 969px) {
+	    display: none;
+	}
 }

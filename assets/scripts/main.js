@@ -19,22 +19,14 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-
+        /*
         $('input.morphsearch-input').focus(function(){
           $(this).attr('placeholder','Search');
         });
         $('input.morphsearch-input').focusout(function(){
           $(this).attr('placeholder','');
         });
-
-        $('.bxslider').bxSlider({
-            minSlides: 1,
-            maxSlides: 8,
-            slideWidth: 189,
-            slideMargin: 0,
-            ticker: true,
-            speed: 50000
-        });
+        */
         function windowPopup(url, width, height) {
           // Calculate the position of the popup so
           // it’s centered on the screen.

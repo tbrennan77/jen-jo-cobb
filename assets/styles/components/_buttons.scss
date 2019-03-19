@@ -1,10 +1,13 @@
 .btn-secondary {
-	color: $brand-grey;
-	background-color: $color-font-white;
-	border: 2px solid $brand-grey;
+	color: $color-font-white;
+	background-color: $brand-pink;
+	border: 1px solid $color-font-white;
+	font-family: $font-header-bold;
+	font-weight: 700;
+	box-shadow: $box-shadow;
 }
 .btn-secondary:hover {
 	color: $color-font-white;
 	background-color: $brand-red;
-	border: 2px solid $color-font-white;
+	border: 1px solid $color-font-white;
 }

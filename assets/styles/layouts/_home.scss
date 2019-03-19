@@ -1,3 +1,10 @@
+.home .main {
+	top: 35px;
+
+	@media (max-width: 969px) {
+	    top: 0px;
+	}
+}
 .slider-row .btn-secondary {
     color: #65a5cd;
     font-weight: 700;
@@ -75,255 +82,99 @@
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
 
-#social-list-header {
-	margin-left: 0px;
-	padding-left: 0px;
-	max-width: 300px;
-}
-#social-list-header li {
-	display: inline;
-	margin-right: 5px !important;
-}
-#social-list-header li img {
-	height: 25px;
-	width: auto;
-}
-.newsletter-signup {
-	text-align: center;
-	padding-bottom: 15px;
-    padding-top: 15px;
-}
+.hero-row {
+	min-height: 600px;
 
-.journey-start {
-	text-align: center;
-	padding: 50px 0;
+	// turn off column padding so textbox stretches entire width
+	.vc_column_container>.vc_column-inner {
+
+	}
+	.wpb_wrapper {
+
+	}
 }
-.journey-start {
-	h3 {
-		font-family: $font-primary;
+.hero-headline {
+	margin-top: 200px;
+
+	h1 {
 		color: $color-font-white;
-		font-weight: 700;
-		font-size: 3rem;
+
+		span {
+			background-color: rgba(255,255,255,.4);
+			padding: 0 10px;
+		}
 	}
-	.btn-outline-primary {
-		border: 2px solid #fff;
-	    color: #fff;
-	    padding: 10px 60px;
-	    border-radius: 10px;
-	    font-size: 18px;
-	    font-weight: 700;
-	    margin-top: 20px;
-	}
-}
-.featured-talks {
-	text-align: center;
-	padding: 50px 0;
-}
-.featured-talks {
-	h3 {
+	h4 {
+		margin-bottom: 30px;
+		color: $color-font-white;
 		font-family: $font-primary;
-		color: $brand-grey;
-		font-weight: 700;
-		font-size: 3rem;
+
+		span {
+			background-color: rgba(255,255,255,.4);
+			padding: 0 10px;
+		}
 	}
-	.podcast {
-		border: 1px solid #ededee;
-		background-color: #fff;
-		min-height: 470px;
-	}
-	.podcast img.header {
-		height: 165px;
-		width: 100%;
-	}
-	.podcast_icon {
-		width: 80px;
-		height: 80px;
-		background: url(../images/podcast_icon.png);
-		position: relative;
-		margin: auto;
-		top: 50px;
-	}
-	.podcast h4 {
-		color: #3a3a3a;
-		font-weight: 700;
-		font-family: $font-primary;
-		padding: 10px 0;
+	h5 {
 		margin-bottom: 0px;
-	}
-	.podcast h5 {
-		color: #74b9d6;
-		font-weight: 700;
-		font-family: $font-primary;
-	}
-	.podcast .excerpt {
-		font-size: 16px;
-		font-weight: 500;
-		font-family: $font-primary;
-		padding: 0 15px 10px 15px;
-		line-height: 24px;
-	}
-	.btn-primary {
-	    background-color: #fff!important;
-	    border-color: #fff!important;
-	    display: none;
-	    margin: auto;
-	    text-transform: uppercase;
-	}
-	.moretag {
+		color: $brand-pink;
 		text-transform: uppercase;
+		font-family: $font-alt;
+		font-size: 1em;
+
+		span {
+			background-color: rgba(255,255,255,.4);
+			padding: 0 10px;
+		}
 	}
 }
-.welcome-video {
-	padding: 50px 0;
+.col-left {
+	.wpb_wrapper {
+		background: rgba(255,255,255,.85);
+	}
 }
-.welcome-video {
-	h3 {
-		font-family: $font-primary;
-		color: $color-font-white;
-		font-weight: 700;
-		font-size: 3rem;
+.col-right {
+	.wpb_wrapper {
+		background: rgba(0,0,0,.85);
 	}
-	.btn-outline-primary {
-		border: 2px solid #fff;
-	    color: $brand-blue;
-	    background-color: $color-font-white;
-	    padding: 10px 60px;
-	    border-radius: 10px;
-	    font-size: 18px;
-	    font-weight: 700;
-	    margin-top: 20px;
-	    width: 280px;
-	}
+}
+.sharephotos {
 	p {
-		color: $color-font-white;
-	}
-}
-.partner-with {
-	padding: 50px 0;
-}
-.partner-with {
-	h3 {
-		font-family: $font-primary;
-		color: $color-font-white;
+		color: $color-font-white; 
+		font-size: 2.9em;
+		letter-spacing: -.02em;
+		font-family: $font-header-bold;
 		font-weight: 700;
-		font-size: 3rem;
-	}
-	.btn-outline-primary {
-		border: 2px solid #fff;
-	    color: $brand-blue;
-	    background-color: $color-font-white;
-	    padding: 10px 60px;
-	    border-radius: 10px;
-	    font-size: 18px;
-	    font-weight: 700;
-	    margin-top: 20px;
-	    width: 280px;
-	}
-	p {
-		color: $color-font-white;
-	}
-	#social-list-header li img {
-		height: 40px;
-	}
+		line-height: 1.2;
+		margin-bottom: 40px;
+		margin-top: 40px;
 
-	#social-list-header {
-		a, .icon-background {
-			color: #fff;
-		}
-		.icon-dark {
-			color: $brand-grey;
-		}
-		a:hover {
-			text-decoration: none;
-			border-bottom-width: 0px;
+		@media (max-width: 969px) {
+		    font-size: 1.5em;
+		    line-height: 1.5;
 		}
 	}
-}
-.featured-row {
-	display: flex;
-  	flex-direction: column;
-  	justify-content: center;
-  	text-align: center;
-}
-.featured-row {
-	h3 {
-		font-family: $font-primary;
-		color: #000;
-    	font-weight: 300;
-    	font-size: 2.5rem;
-    	text-align: left;
-	}
-	.btn-primary {
-		color: $color-font-white;
-	    background-color: $brand-blue;
-	    padding: 10px 60px;
-	    border-radius: 10px;
-	    font-size: 18px;
-	    font-weight: 700;
-	    width: 280px;
-	}
-}
-.homepage-book img {
-	max-height: 250px;
-	width: auto;
-}
-.home .main {
-	margin-top: 100px;
-}
-.home-hero {
-	min-height: 400px;
-    margin-top: 200px;
 
-    @media (max-width: 768px) {
-		min-height: 200px;
-	    margin-top: 100px;
-    }
-}
-.homepage-four-columns {
-	h3 {
-		color: $brand-grey;
+	.btn-danger {
+		font-family: $font-header-bold;
+		font-weight: 700;
+		padding: .75rem 1rem;
+		font-size: 1.5em;
 	}
-}
-.home-testimonials {
-	max-width: 800px;
-    margin: 0 auto;
 
-    .wpb_wrapper {
-    	border-left: 5px solid $color-font-white;
-    }
-    .testimonial-message p {
-    	font-size: 1.5em;
-    	font-weight: 500;
-    	line-height: 1.4;
-    	color: $color-font-white;
-    }
-    .testimonial-author {
-    	margin-top: 32px;
+	.social-nav {
+		padding-left: 0px;
 
-    	.testimonial-name {
-    		font-size: 2em;
-    		letter-spacing: -.02em;
-    		font-weight: bold;
-    		color: $color-font-white;
-    	}
-    	.testimonial-tagline {
-    		font-style: normal;
-    		color: $color-font-white;
-    	}
-    }
-    .flex-control-paging, 
-    .flex-direction-nav {
-    	display: none;
-    }
-}
-.bne-testimonial-slider.bne-flexslider .flex-content {
-	padding-bottom: 15px;
-}
-.homepage-testimonials {
-	background-color: $brand-grey;
-}
-.homepage-workwith h3 {
-	font-size: 3em;
-	color: $brand-grey;
-	text-align: center;
+		li {
+			display: inline;
+
+			a {
+				padding: .5em;
+				font-size: 2em;
+			}
+
+			a:hover {
+				color: $brand-red;
+			}
+		}
+	}
 }
