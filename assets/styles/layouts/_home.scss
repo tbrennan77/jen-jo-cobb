@@ -178,3 +178,103 @@
 		}
 	}
 }
+.drivenswag {
+	p {
+		color: $color-font-white; 
+		font-size: 1.5em;
+		letter-spacing: -.02em;
+		font-family: $font-header-bold;
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 40px;
+		margin-top: 40px;
+
+		@media (max-width: 969px) {
+		    font-size: 1.5em;
+		    line-height: 1.5;
+		}
+	}
+	h2 {
+		color: #fff;
+	    font-size: 2.9em;
+	    letter-spacing: -.02em;
+	    font-family: $font-alt;
+	    font-weight: 700;
+	    line-height: 1.4;
+	    margin-bottom: 40px;
+	    margin-top: 40px;
+	}
+
+	.btn-danger {
+		font-family: $font-header-bold;
+		font-weight: 700;
+		padding: .75rem 1rem;
+		font-size: 1.5em;
+	}
+}
+.twitter-column {
+	h2 {
+		font-family: futura-pt-bold,sans-serif;
+	    font-size: 2em;
+	    line-height: 2.5;
+	    text-transform: uppercase;
+	    letter-spacing: -.02em;
+	    text-align: center;
+	    color: $brand-dk-purple;
+	    border-bottom: 5px solid $brand-pink;
+	    display: inline;
+	}
+}
+.schedule-column {
+	h2 {
+		font-family: futura-pt-bold,sans-serif;
+	    font-size: 2em;
+	    line-height: 2.5;
+	    text-transform: uppercase;
+	    letter-spacing: -.02em;
+	    text-align: right;
+	    color: $brand-dk-purple;
+	    border-bottom: 5px solid $brand-pink;
+	    display: inline;
+	}
+	.EvcalWidget {
+		text-align: right;
+	}
+}
+.column-partners {
+	text-align: center;
+
+	h2 {
+		font-family: futura-pt-bold,sans-serif;
+	    font-size: 3em;
+	    line-height: 2.5;
+	    text-transform: uppercase;
+	    letter-spacing: -.02em;
+	    text-align: center;
+	    color: $brand-dk-purple;
+	    border-bottom: 5px solid $brand-pink;
+	    display: inline; 
+	} 
+}
+.home .woocommerce ul.products li.product .button {
+	display: none;
+}
+.home .woocommerce ul.products li.product {
+	padding: 30px;
+}
+.uc-sport-slider-mt .uc-sport-slider-container .uc-sport-slider-content span {
+	margin-left: 0px !important;
+	background-color: rgba(255,255,255,.5);
+	display: inline !important;
+}
+.uc-sport-slider-mt .uc-sport-slider-container .uc-sport-slider-content a.uc-btn:last-child {
+	display: none;
+}
+.uc-sport-slider-mt .uc-sport-slider-container .uc-sport-slider-content a.uc-btn {
+	color: $color-font-white !important;
+	background-color: $brand-red;
+}
+.uc-sport-slider-mt .uc-sport-slider-container .uc-sport-slider-content strong {
+	margin-bottom: 50px !important;
+	background-color: rgba(255,255,255,.5);
+}
