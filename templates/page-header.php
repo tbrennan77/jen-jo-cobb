@@ -17,6 +17,10 @@
 		$header_text_color  = get_field('header_text_color');
 		if($header_text_color == '')
 			$header_text_color = 'light';
+
+		$no_header = get_field('no_header');
+
+		if($no_header != 1) {
   	?>
     <header class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0)), url(<?php echo $thumb_url; ?>) repeat center top;">
       <div class="container">
@@ -101,5 +105,7 @@
       </div>
     </header>
   <?php 
+}
+
 	}
   ?>

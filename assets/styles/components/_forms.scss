@@ -13,3 +13,106 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+
+/* forms */
+.btn {
+	font-family: $font-primary;
+    border-radius: 3px;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    color: white !important;
+    font-size: 1em;
+    letter-spacing: -.01em;
+    font-weight: 700;
+    text-transform: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+
+    @media (max-width: 992px) {
+        max-width: none;
+        width: 100%;
+    }
+}
+.btn:hover {
+	background-color: $brand-grey;
+	color: $color-white;
+}
+.btn-success {
+	background-color: $brand-red;
+}
+.btn-info {
+	background-color: $brand-blue; //#5bc0de;
+}
+.btn-success:hover {
+	background-color: $brand-grey;
+}
+.btn-xxl {
+	font-size: 22px;
+}
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid $brand-red !important;
+    color: $brand-red !important;
+}
+.btn-primary:hover {
+    background-color: $brand-dk-purple;
+    color: $brand-dk-purple !important;
+}
+.home .hero .btn-danger {
+    background-color: transparent;
+    border: 2px solid $brand-dk-purple;
+    color: $brand-dk-purple;
+}
+.home .hero .btn-danger:hover {
+    color: $brand-dk-purple !important;
+    background-color: $color-font-white;
+}
+
+// Gravity Forms
+#gform_submit_button_1,
+#gform_submit_button_5,
+#gform_submit_button_6,
+#gform_submit_button_7 {
+    font-family: $font-primary;
+    border-radius: 3px;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    color: white !important;
+    font-size: 1em;
+    letter-spacing: -.01em;
+    font-weight: 700;
+    text-transform: none;
+    background-color: $brand-dk-purple;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+
+    @media (max-width: 992px) {
+        max-width: none;
+        width: 100%;
+    }
+}
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    border-width: 0px;
+    border-bottom: 3px solid $brand-dk-purple;
+    min-height: 60px;
+    font-size: 2em;
+    padding: 5px 10px;
+}
+.gform_wrapper .birthday {
+    width: 100%;
+}
+.gform_wrapper textarea {
+    border: 3px solid $brand-dk-purple;
+    min-height: 60px;
+    font-size: 2em;
+    padding: 5px 10px;
+    font-size: 2em;
+}
+.tb-gforms-compat .gform_wrapper .gfield_checkbox li label, .tb-gforms-compat .gform_wrapper .gfield_radio li label {
+    color: $brand-dk-purple;
+}
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, 
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], 
+.gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+    margin-top: 0px !important;
+    margin-right: 5px;  
+}
