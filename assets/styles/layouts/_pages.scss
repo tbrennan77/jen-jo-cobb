@@ -16,6 +16,11 @@
 	padding-top: 400px;
 	background-size: cover !important;
 	min-height: 600px;
+
+	@media (max-width: 768px) {
+	    padding-top: 200px;
+		min-height: 400px;
+	}
 }
 
 header.content-header {
@@ -52,9 +57,31 @@ header.content-header {
 		color: #fff;
 	}
 	.header-text-light h1,
-	.header-text-light h3,
 	.header-text-light a {
-		color: $color-font-white;
+		color: $brand-dk-purple;
+		background: rgba(255,255,255,.5);
+    	display: inline-block;
+    	padding: 15px;
+    	font-size: 6em;
+
+    	@media (max-width: 768px) {
+	      font-size: 3em;
+	      padding: 5px;
+	    }
+	}
+	.header-text-light h3 {
+		color: $brand-red;
+		font-family: $font-header-bold;
+		letter-spacing: -.02em;
+		font-size: 4.5em;
+		background: rgba(255,255,255,.5);
+    	display: inline-block;
+    	padding: 15px;
+
+    	@media (max-width: 768px) {
+	      font-size: 2em;
+	      padding: 5px;
+	    }
 	}
 	.header-text-light .icon-dark {
 		color: #3a3a3a;

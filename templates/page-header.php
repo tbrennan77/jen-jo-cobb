@@ -18,10 +18,10 @@
 		if($header_text_color == '')
 			$header_text_color = 'light';
   	?>
-    <header class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, .5)), url(<?php echo $thumb_url; ?>) repeat center top;">
+    <header class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0)), url(<?php echo $thumb_url; ?>) repeat center top;">
       <div class="container">
         <div class="row no-gutters">
-		  <div class="col-md-6">
+		  <div class="col-md-8">
             <div class="row no-gutters">
               <div class="col-xs-12 header-text-<?php echo $header_text_color; ?>">
                 <h1 class="entry-title"><?php the_title(); ?></h1>
