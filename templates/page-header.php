@@ -20,17 +20,17 @@
 
 		$no_header = get_field('no_header');
 		$video = get_post_meta( get_the_ID(), 'youtube_embed_link', true );
+		
 
 		if($no_header != 1) { // do this if the no header box is not checked
-
-			if($video) {
+			if($video != "") {
   			?>
-    			<header class="full-width content-header" id="bgndVideo" class="player" data-property="{videoURL:'<?php echo $video; ?>',containment:'self',startAt:0,mute:false,autoPlay:true,loop:false,opacity:1}">
+    			<header class="full-width content-header" id="bgndVideo" class="player" data-property="{videoURL:'<?php echo $video; ?>',containment:'#bgndVideo',startAt:0,mute:false,autoPlay:true,loop:false,opacity:1}">
     		<?php } else { ?>
     			<header class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0)), url(<?php echo $thumb_url; ?>) repeat center top;">
     		<?php 
     		} ?>
-      <div class="container">
+      <div class="container vidbg">
         <div class="row no-gutters">
 		  <div class="col-md-8">
             <div class="row no-gutters">

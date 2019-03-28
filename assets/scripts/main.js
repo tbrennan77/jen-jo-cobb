@@ -50,14 +50,14 @@
               $(".brand-logo").addClass("brand-logo-scroll");
               $(".nav").addClass("nav-scroll");
               $(".navbar-header").addClass("navbar-header-scroll");
-              $("#menu-redt-main-menu li a").addClass("menu-font-scroll");
+              //$("#menu-redt-main-menu li a").addClass("menu-font-scroll");
           } else {
               //remove the background property so it comes transparent again (defined in your css)
              $("body>header").removeClass("header-scroll");
              $(".brand-logo").removeClass("brand-logo-scroll");
              $(".nav").removeClass("nav-scroll");
              $(".navbar-header").removeClass("navbar-header-scroll");
-             $("#menu-redt-main-menu li a").removeClass("menu-font-scroll");
+             //$("#menu-redt-main-menu li a").removeClass("menu-font-scroll");
           }
         });
 
