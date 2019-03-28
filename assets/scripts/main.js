@@ -40,6 +40,10 @@
           );
         }
 
+        $(function(){
+          $("#bgndVideo").YTPlayer();
+        });
+
         $(window).on("scroll", function() {
           if($(window).scrollTop() > 100) {
               $("body>header").addClass("header-scroll");

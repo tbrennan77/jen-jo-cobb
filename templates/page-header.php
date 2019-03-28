@@ -19,10 +19,17 @@
 			$header_text_color = 'light';
 
 		$no_header = get_field('no_header');
+		$video = get_post_meta( get_the_ID(), 'youtube_embed_link', true );
 
-		if($no_header != 1) {
-  	?>
-    <header class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0)), url(<?php echo $thumb_url; ?>) repeat center top;">
+		if($no_header != 1) { // do this if the no header box is not checked
+
+			if($video) {
+  			?>
+    			<header class="full-width content-header" id="bgndVideo" class="player" data-property="{videoURL:'<?php echo $video; ?>',containment:'self',startAt:0,mute:false,autoPlay:true,loop:false,opacity:1}">
+    		<?php } else { ?>
+    			<header class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0)), url(<?php echo $thumb_url; ?>) repeat center top;">
+    		<?php 
+    		} ?>
       <div class="container">
         <div class="row no-gutters">
 		  <div class="col-md-8">
@@ -38,9 +45,7 @@
               </div>
               <div class="col-xs-12">
 	           <?php 
-	            $video = get_post_meta( get_the_ID(), 'youtube_embed_link', true );
-
-	            echo wp_oembed_get( $video, array('width'=>350) );
+	 				//echo wp_oembed_get( $video, array('width'=>350) );
 	           ?>
               </div>
               <div class="col-xs-12">
@@ -103,6 +108,8 @@
           </div>
         </div>
       </div>
+     <div id="bgndVideo" class="player" 
+     data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></div>
     </header>
   <?php 
 }

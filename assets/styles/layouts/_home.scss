@@ -213,6 +213,8 @@
 	}
 }
 .twitter-column {
+	text-align: center;
+
 	h2 {
 		font-family: futura-pt-bold,sans-serif;
 	    font-size: 2em;
@@ -222,10 +224,12 @@
 	    text-align: center;
 	    color: $brand-dk-purple;
 	    border-bottom: 5px solid $brand-pink;
-	    display: inline;
+	    display: inline-block;
 	}
 }
 .schedule-column {
+	text-align: center;
+
 	h2 {
 		font-family: futura-pt-bold,sans-serif;
 	    font-size: 2em;
@@ -235,10 +239,10 @@
 	    text-align: right;
 	    color: $brand-dk-purple;
 	    border-bottom: 5px solid $brand-pink;
-	    display: inline;
+	    display: inline-block;
 	}
 	.EvcalWidget {
-		text-align: right;
+
 	}
 }
 .column-partners {

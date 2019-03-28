@@ -63,7 +63,7 @@
 }
 #menu-social-navigation {
 	float: right;
-	margin-top: 10px;
+	margin: 5px 0 5px 0px;
 
 	li {
 		display: inline;
@@ -71,7 +71,12 @@
 		line-height: 2.5;
 
 		a {
-			font-size: 1rem;
+			font-size: 1.4rem;
+			color: $brand-pink-lt;
+
+		}
+		a:hover {
+			color: $color-font-white;
 		}
 	}
 }

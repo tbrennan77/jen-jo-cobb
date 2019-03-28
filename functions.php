@@ -204,13 +204,13 @@ function form_submit_button_exit( $button, $form ) {
 }
 
 
-add_filter('gform_submit_button_2', 'form_submit_button', 10, 2 );
+//add_filter('gform_submit_button_2', 'form_submit_button', 10, 2 );
 function form_submit_button( $button, $form ) {
     return "<button class='btn btn-primary btn-block' id='gform_submit_button_{$form['id']}'><span>Subscribe</span></button>";
 }
 
 // filter the Gravity Forms button type
-add_filter('gform_submit_button_1', 'form_submit_button_modal', 10, 2 );
+//add_filter('gform_submit_button_1', 'form_submit_button_modal', 10, 2 );
 function form_submit_button_modal( $button, $form ) {
     return "<button class='btn btn-primary btn-block btn-ask-modal' id='gform_submit_button_{$form['id']}'><span>Send Now</span></button>";
 }
@@ -446,3 +446,8 @@ function register_footer_menu() {
 }
 add_action( 'init', 'register_footer_menu' );
 
+
+function jjc_enqueue_javascript() { 
+    wp_enqueue_script( 'YTPlayer-js', get_template_directory_uri() . '/assets/scripts/jquery.mb.YTPlayer.js' ); 
+}
+add_action( 'wp_enqueue_scripts', 'jjc_enqueue_javascript' );
