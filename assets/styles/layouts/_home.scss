@@ -180,12 +180,12 @@
 }
 .drivenswag {
 	p {
-		color: $color-font-white; 
-		font-size: 1.5em;
+		color: $brand-dk-purple; 
+		font-size: 1em;
 		letter-spacing: -.02em;
 		font-family: $font-header-bold;
-		font-weight: 600;
-		line-height: 1;
+		font-weight: 500;
+		line-height: 1.2;
 		margin-bottom: 40px;
 		margin-top: 40px;
 
@@ -195,8 +195,8 @@
 		}
 	}
 	h2 {
-		color: #fff;
-	    font-size: 2.9em;
+		color: $brand-pink-lt;
+	    font-size: 1.5em;
 	    letter-spacing: -.02em;
 	    font-family: $font-alt;
 	    font-weight: 700;
@@ -227,7 +227,8 @@
 	    display: inline-block;
 	}
 }
-.news-and-media h3 {
+.news-and-media h3, 
+.merch-column h2 {
 	font-family: futura-pt-bold,sans-serif;
 	font-size: 2em;
 	line-height: 1.5;
@@ -235,9 +236,17 @@
 	letter-spacing: -.02em;
 	text-align: center;
 	color: $brand-dk-purple;
-
 	display: inline-block;
 	margin-bottom: 20px;
+}
+.merch-column h2 {
+	text-align: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+.merch-column {
+	text-align: center;
 }
 .news-and-media .entry-content h3:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
@@ -268,25 +277,41 @@
 	}
 }
 .column-partners {
-	text-align: center;
-
+	
 	h2 {
 		font-family: futura-pt-bold,sans-serif;
 	    font-size: 3em;
-	    line-height: 2.5;
+	    line-height: 2;
 	    text-transform: uppercase;
 	    letter-spacing: -.02em;
 	    text-align: center;
 	    color: $brand-dk-purple;
-	    border-bottom: 5px solid $brand-pink;
-	    display: inline; 
+	    display: inline-block; 
 	} 
+
+	h2:after {
+	    content: ""; /* This is necessary for the pseudo element to work. */ 
+	    display: block; /* This will put the pseudo element on its own line. */
+	    margin: 0 auto; /* This will center the border. */
+	    width: 40%; /* Change this to whatever width you want. */
+	    padding-top: 10px; /* This creates some space between the element and the border. */
+	    border-bottom: 5px solid $brand-pink; /* This creates the border. Replace black with whatever color you want. */
+	    float: left;
+	}
 }
 .home .woocommerce ul.products li.product .button {
 	display: none;
 }
 .home .woocommerce ul.products li.product {
 	padding: 30px;
+}
+.home .home-col-gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38215c+0,e12f8b+100&0.5+0,0.2+100 */
+	background: -moz-linear-gradient(top, rgba(56,33,92,0.5) 0%, rgba(225,47,139,0.2) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(56,33,92,0.5) 0%,rgba(225,47,139,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(56,33,92,0.5) 0%,rgba(225,47,139,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8038215c', endColorstr='#33e12f8b',GradientType=0 ); /* IE6-9 */
+	border-bottom: 15px solid #2F282A;
 }
 .uc-sport-slider-mt .uc-sport-slider-container .uc-sport-slider-content span {
 	margin-left: 0px !important;
@@ -303,4 +328,13 @@
 .uc-sport-slider-mt .uc-sport-slider-container .uc-sport-slider-content strong {
 	margin-bottom: 50px !important;
 	background-color: rgba(255,255,255,.5);
+}
+
+.home .woocommerce-loop-product__title {
+	color: #E12F8B;
+	font-family: $font-header-bold;
+}
+.home .woocommerce ul.products li.product .price {
+	color: #2F282A;
+	font-family: $font-header-bold;
 }
