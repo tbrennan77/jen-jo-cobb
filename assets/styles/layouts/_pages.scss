@@ -1,6 +1,10 @@
 .page .brand-container,
+.page .brand-container,
 .single .brand-container {
 	display: none;
+}
+.page .entry-content {
+	margin-top: 0px;
 }
 .full-width {
 	padding: 50px 0;
@@ -16,6 +20,7 @@
 	padding-top: 200px;
 	//background-size: cover !important;
 	max-height: 600px !important;
+	height: 600px !important;
 
 	@media (max-width: 768px) {
 	    padding-top: 200px;
@@ -24,14 +29,14 @@
 }
 
 #bgndVideo {
-	height: 600px;
+	height: 600px !important;
 
 	@media (max-width: 768px) {
 	    padding-top: 100px;
 		height: 400px;
 	}
 }
-header.content-header {
+.content-header {
 	h1,
 	time, 
 	a, 
@@ -45,10 +50,14 @@ header.content-header {
 		font-weight: 700;
 		font-size: 56px;
 		line-height: 56px;
+		clear: both;
+    	float: left;
 	}
 	h3 {
 		font-size: 40px;
 		line-height: 44px;
+		clear: both;
+    	float: left;
 	}
 	.icon-dark {
 		color: $brand-grey;
@@ -145,4 +154,30 @@ header.content-header {
 }
 .spp-powered-by {
 	display: none !important;
+}
+.highlights {
+	p {
+		color: $color-font-white;
+	}
+
+	h2 {
+		font-family: futura-pt-bold,sans-serif;
+	    font-size: 3em;
+	    line-height: 2;
+	    text-transform: uppercase;
+	    letter-spacing: -.02em;
+	    text-align: center;
+	    color: $color-font-white;
+	    display: inline-block; 
+	} 
+
+	h2:after {
+	    content: ""; /* This is necessary for the pseudo element to work. */ 
+	    display: block; /* This will put the pseudo element on its own line. */
+	    margin: 0 auto; /* This will center the border. */
+	    width: 40%; /* Change this to whatever width you want. */
+	    padding-top: 10px; /* This creates some space between the element and the border. */
+	    border-bottom: 5px solid $color-font-white; /* This creates the border. Replace black with whatever color you want. */
+	    float: left;
+	}
 }
