@@ -26,7 +26,7 @@ header:active {
 	box-shadow: $box-shadow;
 	height: 60px;
 
-	@media (max-width: 969px) {
+	@media (max-width: 992px) {
 	    height: 50px;
 	}
 }
@@ -37,14 +37,24 @@ header:active {
 	float: right;
 	padding: .25rem 0 .25rem .75rem;
 
-	@media (max-width: 969px) {
+	@media (max-width: 992px) {
 	    display: block;
 	}
 }
 .mobile-menu {
 	display: none;
+	background: #84266B;
 
-	@media (max-width: 969px) {
+	a {
+		color: $color-font-white;
+		font-family: $font-header-bold;
+		font-size: 1.25em;
+	    line-height: 2.5;
+	    text-transform: none;
+	    letter-spacing: -.02em;
+	}
+
+	@media (max-width: 992px) {
 	    display: block;
 	}
 }
@@ -52,14 +62,14 @@ header:active {
 	display: block;
 	text-align: center;
 
-	@media (max-width: 969px) {
+	@media (max-width: 992px) {
 	    display: none;
 	}
 }
 .social-menu {
 	display: block;
 
-	@media (max-width: 969px) {
+	@media (max-width: 992px) {
 	    display: none;
 	}
 }
