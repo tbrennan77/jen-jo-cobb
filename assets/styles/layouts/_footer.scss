@@ -1,10 +1,10 @@
 footer {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e12f8b+0,38215c+49,e12f8b+100 */
   background: rgb(225,47,139); /* Old browsers */
-  background: -moz-linear-gradient(45deg, rgba(225,47,139,1) 0%, rgba(56,33,92,1) 49%, rgba(225,47,139,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, rgba(225,47,139,1) 0%,rgba(56,33,92,1) 49%,rgba(225,47,139,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, rgba(225,47,139,1) 0%,rgba(56,33,92,1) 49%,rgba(225,47,139,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e12f8b', endColorstr='#e12f8b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  //background: -moz-linear-gradient(45deg, rgba(225,47,139,1) 0%, rgba(56,33,92,1) 49%, rgba(225,47,139,1) 100%); 
+  //background: -webkit-linear-gradient(45deg, rgba(225,47,139,1) 0%,rgba(56,33,92,1) 49%,rgba(225,47,139,1) 100%); 
+ // background: linear-gradient(45deg, rgba(225,47,139,1) 0%,rgba(56,33,92,1) 49%,rgba(225,47,139,1) 100%); 
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e12f8b', endColorstr='#e12f8b',GradientType=1 );
 	padding: 50px 0;
 	color: $color-font-white;
 	min-height: 35px;
@@ -34,12 +34,12 @@ footer .col-sm-6 section {
     margin-top: 30px;
     text-align: right;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       text-align: center;
     }
 }
 footer section {
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     text-align: center;
   }
 }
@@ -61,7 +61,7 @@ footer li {
     margin-top: 40px;
     padding-left: 40px;
     
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       text-align: center;
       padding-left: 0px;
     }
@@ -81,7 +81,7 @@ footer li {
     text-align: left;
     font-size: .95em;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       margin-left: 0px;
       text-align: center;
     }
@@ -106,15 +106,20 @@ footer li {
   width: 82%;
   max-width: 80%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
       width: 100%;
       max-width: 100%;
       margin: 0 auto;
   }
 }
 
-#gform_wrapper_2 .gfield_label {
-  display: none;
+#gform_wrapper_2 {
+  .gfield_label {
+    display: none;
+  }
+  ::placeholder {
+    color: $color-font-white;
+  }
 }
 
 #gform_wrapper_2 #input_2_2 {
@@ -152,7 +157,7 @@ footer li {
   margin-top: 20px;
   list-style-type: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     text-align: center;
     padding-left: 0px;
   }
@@ -176,7 +181,7 @@ footer li {
     padding-bottom: 10px;
     margin-bottom: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       text-align: center;
     }
 }
@@ -184,7 +189,7 @@ footer li {
     display: inline;
     padding: 5px 10px;
     
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       text-align: center;
       padding: 0px 5px;
     }
@@ -198,6 +203,15 @@ footer li {
     font-size: .85em;
     text-align: center;
     font-weight: 500;
+}
+.sidebar-footer-right {
+  text-align: right; 
+
+
+  @media (max-width: 992px) {
+      text-align: center;
+      padding: 0px 40px;
+    }
 }
 
 
