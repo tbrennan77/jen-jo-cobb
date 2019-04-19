@@ -29,7 +29,7 @@
     			<div class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0)), url(<?php echo $thumb_url; ?>) repeat center top; background-size: cover;">
     		<?php 
     		} ?>
-      <div class="container vidbg">
+      <div class="container-fluid vidbg">
         <div class="row no-gutters">
 		  <div class="col-md-9">
             <div class="row no-gutters">

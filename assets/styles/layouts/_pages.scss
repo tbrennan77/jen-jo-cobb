@@ -75,16 +75,16 @@
 	}
 	.header-text-light h1,
 	.header-text-light a {
-		color: $brand-dk-purple;
-		background: rgba(255,255,255,.5);
+		//color: $brand-dk-purple;
+		//background: rgba(255,255,255,.5);
     	display: inline-block;
-    	padding: 15px;
+    	padding: 25px;
     	font-size: 4em;
     	letter-spacing: -.02em;
 
-    	@media (max-width: 768px) {
-	      font-size: 3em;
-	      padding: 5px;
+    	@media (max-width: 992px) {
+	      font-size: 2em;
+	      padding: 15px;
 	    }
 	}
 	.header-text-light h3 {
@@ -179,5 +179,22 @@
 	    padding-top: 10px; /* This creates some space between the element and the border. */
 	    border-bottom: 5px solid $color-font-white; /* This creates the border. Replace black with whatever color you want. */
 	    float: left;
+
+	    @media (max-width: 992px) {
+			width: 100%;
+		}
 	}
+}
+.about-icon img {
+	height: 60px;
+	width: auto;
+}
+.vidbg {
+	position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: -moz-linear-gradient(left, rgba(56,33,92,0.73) 0%, rgba(223,47,139,0.73) 99%, rgba(225,47,139,0.73) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(56,33,92,0.73) 0%,rgba(223,47,139,0.73) 99%,rgba(225,47,139,0.73) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(56,33,92,0.73) 0%,rgba(223,47,139,0.73) 99%,rgba(225,47,139,0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba38215c', endColorstr='#bae12f8b',GradientType=1 ); /* IE6-9 */
 }
