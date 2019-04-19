@@ -281,12 +281,17 @@
 	h2 {
 		font-family: futura-pt-bold,sans-serif;
 	    font-size: 3em;
-	    line-height: 2;
+	    line-height: 1;
 	    text-transform: uppercase;
 	    letter-spacing: -.02em;
 	    text-align: center;
 	    color: $brand-dk-purple;
 	    display: inline-block; 
+
+	    @media (max-width: 992px) {
+		    font-size: 2em;
+		    line-height: 1;
+		}
 	} 
 
 	h2:after {
@@ -297,6 +302,10 @@
 	    padding-top: 10px; /* This creates some space between the element and the border. */
 	    border-bottom: 5px solid $brand-pink; /* This creates the border. Replace black with whatever color you want. */
 	    float: left;
+
+	    @media (max-width: 992px) {
+		    width: 100%;
+		}
 	}
 }
 .home .woocommerce ul.products li.product .button {
