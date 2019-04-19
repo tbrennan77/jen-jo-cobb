@@ -4,7 +4,7 @@
         <div class="navbar-header col-lg-12">
           <nav class="navbar navbar-toggleable-md navbar-light sticky-top pr-0 pl-0">
             <div class="row">
-              <div class="header-logo col-xs-6 col-lg-3">
+              <div class="header-logo col-xs-6 col-lg-2">
                 <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
                     <?php
                       if ( get_theme_mod('theme_logo') ) :
@@ -15,7 +15,7 @@
                     ?>
                 </a>
               </div>
-              <div class="desktop-menu col-xs-0 col-lg-6">
+              <div class="desktop-menu col-xs-0 col-lg-7">
                 <?php
                   if (has_nav_menu('primary_navigation')) :
                     wp_nav_menu([ 'menu' => 'primary_navigation',
@@ -71,7 +71,20 @@
                   'depth' => 2
                   ]);
               endif;
-            ?>
+                
+              if (has_nav_menu('social_navigation')) :
+                    wp_nav_menu([ 'menu' => 17,
+                      'theme_location' => 'social_navigation',
+                      'menu_id' => false,
+                      'menu_class' => 'social-nav',
+                      'fallback_cb' => 'bs4navwalker::fallback',
+                      'walker' => new bs4navwalker()
+                      ]);
+              endif;
+                  
+              //get_template_part('templates/search');
+              ?>
+
           </nav>
         </div>
       </div>
