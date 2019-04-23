@@ -34,13 +34,10 @@
 		  <div class="col-md-9">
             <div class="row no-gutters">
               <div class="col-xs-12 header-text-<?php echo $header_text_color; ?>">
-                <h1 class="entry-title"><?php the_title(); ?></h1>
                 <?php 
-	            $subheader = get_post_meta( get_the_ID(), 'sub-header', true );
-	            if($subheader) {
-	            	echo "<h3>".$subheader."</h3>";
-	            }
-	           ?>
+	            $subheader = get_post_meta( get_the_ID(), 'sub-header', true ); 
+	            ?>
+	            <h1 class="entry-title"><?php the_title(); if($subheader) { echo " ".$subheader; }?></h1>
               </div>
               <div class="col-xs-12">
 	           <?php 
