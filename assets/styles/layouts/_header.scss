@@ -88,6 +88,7 @@ header:active {
 .social-menu {
 	display: block;
 	padding: 0 10px 0 0;
+	max-width: 15.9%;  // Safari :/ 
 
 	@media (max-width: 992px) {
 	    display: none;
@@ -95,4 +96,7 @@ header:active {
 }
 #menu-social-navigation {
 	padding-left: 0px;
+}
+.mobile-button {
+	max-width: 49%; // Safari :/ 
 }
