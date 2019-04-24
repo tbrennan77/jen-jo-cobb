@@ -16,19 +16,19 @@
     margin-right: -50vw;
 
     @media (max-width: 992px) {
-	    left: 40%;
+	    //left: 40%;
 	}
 }
 .page .full-width {
 	border-bottom: 10px solid #e6e6e6;
 	padding-top: 200px;
 	//background-size: cover !important;
-	max-height: 600px !important;
-	//height: 600px !important;
+	max-height: 800px !important;
+	min-height: 600px !important;
 
 	@media (max-width: 768px) {
-	    padding-top: 200px;
-		max-height: 400px;
+	    min-height: 400px;
+		max-height: 600px;
 	}
 }
 
@@ -173,6 +173,10 @@
 	    text-align: center;
 	    color: $color-font-white;
 	    display: inline-block; 
+
+	    @media (max-width: 992px) {
+			font-size: 2em;
+		}
 	} 
 
 	h2:after {
@@ -186,6 +190,7 @@
 
 	    @media (max-width: 992px) {
 			width: 100%;
+			padding-top: 0px;
 		}
 	}
 }
@@ -201,4 +206,43 @@
 	background: -webkit-linear-gradient(left, rgba(56,33,92,0.73) 0%,rgba(223,47,139,0.73) 99%,rgba(225,47,139,0.73) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, rgba(56,33,92,0.73) 0%,rgba(223,47,139,0.73) 99%,rgba(225,47,139,0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba38215c', endColorstr='#bae12f8b',GradientType=1 ); /* IE6-9 */
+}
+h4 {
+	font-family: futura-pt-bold,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    color: $brand-dk-purple;
+    display: block;
+}
+
+hr { 
+    background: url('/hr_icon_jen_jo_cobb.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 18px;
+    border: 0;
+    position: relative;
+    margin: 20px 0;
+}
+hr:before,
+hr:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #d7d7d7;
+    height: 1px;
+    top: 8px;
+}
+hr:before {
+    left: 0;
+    right: 50%;
+    margin-right: 20px;
+}
+hr:after {
+    right: 0;
+    left: 50%;
+    margin-left: 20px;
+}
+strong {
+	font-weight: 900;
 }

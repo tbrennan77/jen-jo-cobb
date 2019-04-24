@@ -200,7 +200,7 @@ add_filter('widget_text','do_shortcode');
 // filter the Gravity Forms button type
 add_filter('gform_submit_button_3', 'form_submit_button_exit', 10, 2 );
 function form_submit_button_exit( $button, $form ) {
-    return "<button class='btn btn-primary btn-block btn-ask-modal' id='gform_submit_button_{$form['id']}'><span>Get My eBook</span></button>";
+    return "<button class='btn btn-primary btn-block btn-ask-modal' id='gform_submit_button_{$form['id']}'><span>Send</span></button>";
 }
 
 
