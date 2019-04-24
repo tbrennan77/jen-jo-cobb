@@ -73,9 +73,13 @@ header:active {
 	    display: block;
 	}
 }
+.header-logo {
+	padding: 0 0 0 10px;
+}
 .desktop-menu {
 	display: block;
 	text-align: center;
+	padding: 0;
 
 	@media (max-width: 992px) {
 	    display: none;
@@ -83,8 +87,12 @@ header:active {
 }
 .social-menu {
 	display: block;
+	padding: 0 10px 0 0;
 
 	@media (max-width: 992px) {
 	    display: none;
 	}
+}
+#menu-social-navigation {
+	padding-left: 0px;
 }

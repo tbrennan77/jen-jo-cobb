@@ -4,7 +4,7 @@
         <div class="navbar-header col-lg-12">
           <nav class="navbar navbar-toggleable-md navbar-light sticky-top pr-0 pl-0">
             <div class="row">
-              <div class="header-logo col-xs-6 col-lg-2">
+              <div class="header-logo col-xs-6 col-lg-2 px-0">
                 <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
                     <?php
                       if ( get_theme_mod('theme_logo') ) :
@@ -15,7 +15,7 @@
                     ?>
                 </a>
               </div>
-              <div class="desktop-menu col-xs-0 col-lg-7">
+              <div class="desktop-menu col-xs-0 col-lg-8 px-0">
                 <?php
                   if (has_nav_menu('primary_navigation')) :
                     wp_nav_menu([ 'menu' => 'primary_navigation',
@@ -32,7 +32,7 @@
                   //get_template_part('templates/search');
                   ?>
               </div>
-              <div class="social-menu col-xs-0 col-lg-3">
+              <div class="social-menu col-xs-0 col-lg-2 px-0">
                 <?php
                   if (has_nav_menu('social_navigation')) :
                     wp_nav_menu([ 'menu' => 17,
@@ -47,7 +47,7 @@
                   //get_template_part('templates/search');
                   ?>
               </div>
-              <div class="mobile-button col-xs-6 hidden-lg-up">
+              <div class="mobile-button col-xs-6 hidden-lg-up px-0">
                 <button class="navbar-toggler navbar-toggler-right float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   ☰
                 </button>

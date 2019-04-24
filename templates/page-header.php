@@ -37,7 +37,7 @@
                 <?php 
 	            $subheader = get_post_meta( get_the_ID(), 'sub-header', true ); 
 	            ?>
-	            <h1 class="entry-title"><?php the_title(); if($subheader) { echo " ".$subheader; }?></h1>
+	            <h1 class="entry-title"><?php if($subheader) { echo " ".$subheader; } else { the_title(); }?></h1>
               </div>
               <div class="col-xs-12">
 	           <?php 
