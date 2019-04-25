@@ -20,7 +20,7 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="wrap container-fluid" role="document">
       <div class="content row">
-        <div class="container">
+        <div class="container-fluid">
           <main class="main">
             <?php include Wrapper\template_path(); ?>
           </main><!-- /.main -->
