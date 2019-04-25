@@ -24,14 +24,14 @@
 		if($no_header != 1) { // do this if the no header box is not checked
 			if($video != "") {
   			?>
-    			<div class="full-width content-header" id="bgndVideo" class="player" data-property="{videoURL:'<?php echo $video; ?>',containment:'#bgndVideo',startAt:0,mute:false,autoPlay:true,loop:false,opacity:1}">
+    			<div class="full-width content-header" id="bgndVideo" class="player" data-property="{videoURL:'<?php echo $video; ?>',containment:'#bgndVideo',startAt:0,mute:true,autoPlay:true,loop:false,opacity:1}">
     		<?php } else { ?>
     			<div class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0)), url(<?php echo $thumb_url; ?>) repeat center top; background-size: cover;">
     		<?php 
     		} ?>
       <div class="container-fluid vidbg">
         <div class="row no-gutters">
-		  <div class="col-md-9">
+		  <div class="col-xs-12">
             <div class="row no-gutters">
               <div class="col-xs-12 header-text-<?php echo $header_text_color; ?>">
                 <?php 

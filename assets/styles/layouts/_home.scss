@@ -227,7 +227,8 @@
 	    display: inline-block;
 	}
 }
-.news-and-media h3, 
+.news-and-media h3,
+.pop-out h3,  
 .merch-column h2 {
 	font-family: futura-pt-bold,sans-serif;
 	font-size: 2em;
@@ -238,6 +239,9 @@
 	color: $brand-dk-purple;
 	display: inline-block;
 	margin-bottom: 20px;
+}
+.pop-out h3 {
+	margin-bottom: 0px;
 }
 .merch-column h2 {
 	text-align: center;

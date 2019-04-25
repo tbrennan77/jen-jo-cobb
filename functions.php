@@ -210,9 +210,9 @@ function form_submit_button( $button, $form ) {
 }
 
 // filter the Gravity Forms button type
-//add_filter('gform_submit_button_1', 'form_submit_button_modal', 10, 2 );
+add_filter('gform_submit_button_1', 'form_submit_button_modal', 10, 2 );
 function form_submit_button_modal( $button, $form ) {
-    return "<button class='btn btn-primary btn-block btn-ask-modal' id='gform_submit_button_{$form['id']}'><span>Send Now</span></button>";
+    return "<button class='btn btn-primary btn-block btn-ask-modal' id='gform_submit_button_{$form['id']}'><span>Subscribe</span></button>";
 }
 
 

@@ -1,15 +1,15 @@
 footer {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e12f8b+0,38215c+49,e12f8b+100 */
   background: $brand-dk-purple; /* Old browsers */
-  //background: -moz-linear-gradient(45deg, rgba(225,47,139,1) 0%, rgba(56,33,92,1) 49%, rgba(225,47,139,1) 100%); 
-  //background: -webkit-linear-gradient(45deg, rgba(225,47,139,1) 0%,rgba(56,33,92,1) 49%,rgba(225,47,139,1) 100%); 
- // background: linear-gradient(45deg, rgba(225,47,139,1) 0%,rgba(56,33,92,1) 49%,rgba(225,47,139,1) 100%); 
-  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e12f8b', endColorstr='#e12f8b',GradientType=1 );
+  background: -moz-linear-gradient(45deg, rgba(225,47,139,1) 0%, rgba(56,33,92,1) 49%, rgba(225,47,139,1) 100%); 
+  background: -webkit-linear-gradient(45deg, rgba(225,47,139,1) 0%,rgba(56,33,92,1) 49%,rgba(225,47,139,1) 100%); 
+  background: linear-gradient(45deg, rgba(225,47,139,1) 0%,rgba(56,33,92,1) 49%,rgba(225,47,139,1) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e12f8b', endColorstr='#e12f8b',GradientType=1 );
 	padding: 50px 0;
 	color: $color-font-white;
 	min-height: 35px;
   border-top: 1px solid #ccc;
-
+  padding-top: 150px;
 }
 footer a {
 	color: $color-font-white;
@@ -53,13 +53,11 @@ footer li a {
 }
 footer li {
     padding: 4px 0;
+    font-size: .85em;
 }
 .footer-stay-up {
-    text-align: left;
-    margin-left: 0px;
-    margin-bottom: 8px;
-    margin-top: 40px;
-    padding-left: 40px;
+    padding: 0;
+    margin: 20px 0;
     
     @media (max-width: 992px) {
       text-align: center;
@@ -70,15 +68,14 @@ footer li {
         display: inline;
     }
     .li-i {
-        padding: 3px;
+        padding: 10px;
     }
     .li-i a {
         color: $color-font-white;
+        font-size: 1.5em;
     }
 }
 .wealthbuilder {
-    margin-left: 2.25em;
-    text-align: left;
     font-size: .95em;
 
     @media (max-width: 992px) {
@@ -164,7 +161,6 @@ footer li {
 }
 
 .footer-contact-us li a {
-  font-size: .85em;
   text-transform: none;
   color: $color-font-white;
 }
@@ -195,7 +191,7 @@ footer li {
     }
 }
 #menu-footer-menu li a {
-    font-size: .85em;
+    //font-size: .85em;
     color: $color-font-white;
 }
 .footer-disclaimer p {
@@ -214,4 +210,51 @@ footer li {
     }
 }
 
+.footer-border-row {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+.pop-out {
+  text-align: center;
+  padding: 40px;
+  background-color: $color-font-white;
 
+  .gform_wrapper {
+    margin: 0px;
+
+    input[type="text"] {
+      box-shadow: none !important;
+      background: transparent !important;
+      border-bottom-width: 4px !important;
+      font-size: 1.5em !important;
+      font-family: $font-header-bold !important;
+      font-weight: $font-bold !important;
+      color: $brand-dk-purple !important;
+      min-height: 50px !important; 
+    }
+  }
+  .gform_wrapper .gform_body,
+  .gform_wrapper .gform_footer {
+    text-align: center;
+  }
+  .gform_wrapper ul.gform_fields li.gfield {
+    padding-right: 0;
+    margin-top: 0px;
+  }
+  .gfield_label {
+    display: none;
+  }
+}
+.pop-out-container {
+  position: relative;
+  top: 150px;
+}
+.footer-social {
+  text-align: center;
+}
+.mailing-list {
+
+}
