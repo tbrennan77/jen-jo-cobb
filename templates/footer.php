@@ -24,7 +24,7 @@
       <div class="col-lg-8 col-xs-12 mx-0 px-0">
         <?php dynamic_sidebar('sidebar-footer-left'); ?>
       </div>
-      <div class="col-lg-3 ml-1 col-xs-12 sidebar-footer-right text-left mx-0 px-0">
+      <div class="col-lg-4 ml-1 col-xs-12 sidebar-footer-right text-left mx-0 px-0">
         <?php dynamic_sidebar('sidebar-footer-right'); ?>
       </div>
     </div>

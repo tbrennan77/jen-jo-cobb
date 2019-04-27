@@ -29,85 +29,96 @@
     			<div class="full-width content-header" style="background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0)), url(<?php echo $thumb_url; ?>) repeat center top; background-size: cover;">
     		<?php 
     		} ?>
-      <div class="container-fluid vidbg">
-        <div class="row no-gutters">
-		  <div class="col-xs-12">
-            <div class="row no-gutters">
-              <div class="col-xs-12 header-text-<?php echo $header_text_color; ?>">
-                <?php 
-	            $subheader = get_post_meta( get_the_ID(), 'sub-header', true ); 
-	            ?>
-	            <h1 class="entry-title"><?php if($subheader) { echo " ".$subheader; } else { the_title(); }?></h1>
-              </div>
-              <div class="col-xs-12">
-	           <?php 
-	 				//echo wp_oembed_get( $video, array('width'=>350) );
-	           ?>
-              </div>
-              <div class="col-xs-12">
-                <div class="row no-gutters align-items-center">
-					<div class="col-xs-12 header-text-<?php echo $header_text_color; ?>	">
-						<ul id="social-list-header" style="display: none;">
-							<?php if($snapchat_account) { ?>
-							<li><a href="<?php echo $snapchat_account; ?>" target="_blank">
-								<span class="fa-stack fa-1x hvr-grow">
-								  <i class="fa fa-circle fa-stack-2x icon-background"></i>
-								  <i class="fa fa-snapchat-ghost fa-stack-1x icon-dark"></i>
-								</span>
-							</a></li>
-							<?php } ?>
-							<?php if($google_maps) { ?>
-							<li><a href="<?php echo $google_maps; ?>" target="_blank">
-								<span class="fa-stack fa-1x">
-								  <i class="fa fa-circle fa-stack-2x icon-background"></i>
-								  <i class="fa fa-google-plus fa-stack-1x icon-dark"></i>
-								</span>
-							</a></li>
-							<?php } ?>
-							<?php if($instagram_account) { ?>
-							<li><a href="<?php echo $instagram_account; ?>" target="_blank">
-								<span class="fa-stack fa-1x">
-								  <i class="fa fa-circle fa-stack-2x icon-background"></i>
-								  <i class="fa fa-instagram fa-stack-1x icon-dark"></i>
-								</span>
-							</a></li>
-							<?php } ?>
-							<?php if($facebook_profile) { ?>
-							<li><a href="<?php echo $facebook_profile; ?>" target="_blank">
-								<span class="fa-stack fa-1x">
-								  <i class="fa fa-circle fa-stack-2x icon-background"></i>
-								  <i class="fa fa-facebook fa-stack-1x icon-dark"></i>
-								</span>
-							</a></li>
-							<?php } ?>
-							<?php if($youtube_link) { ?>
-							<li><a href="<?php echo $youtube_link; ?>" target="_blank">
-								<span class="fa-stack fa-1x">
-								  <i class="fa fa-circle fa-stack-2x icon-background"></i>
-								  <i class="fa fa-youtube-play fa-stack-1x icon-dark"></i>
-								</span>
-							</a></li>
-							<?php } ?>
-							<?php if($twitter_feed) { ?>
-							<li><a href="<?php echo $twitter_feed; ?>" target="_blank">
-								<span class="fa-stack fa-1x">
-								  <i class="fa fa-circle fa-stack-2x icon-background"></i>
-								  <i class="fa fa-twitter fa-stack-1x icon-dark"></i>
-								</span>
-							</a></li>
-							<?php } ?>
-						</ul>
+	      <div class="container-fluid vidbg">
+	        <div class="row no-gutters">
+			  <div class="col-xs-12">
+	            <div class="row no-gutters">
+	              <div class="col-xs-12 header-text-<?php echo $header_text_color; ?>">
+	                <?php 
+		            $subheader = get_post_meta( get_the_ID(), 'sub-header', true ); 
+		            ?>
+		            <h1 class="entry-title"><?php if($subheader) { echo " ".$subheader; } else { the_title(); }?></h1>
+	              </div>
+	              <div class="col-xs-12">
+	                <div class="row no-gutters align-items-center">
+						<div class="col-xs-12 header-text-<?php echo $header_text_color; ?>	">
+							<ul id="social-list-header" style="display: none;">
+								<?php if($snapchat_account) { ?>
+								<li><a href="<?php echo $snapchat_account; ?>" target="_blank">
+									<span class="fa-stack fa-1x hvr-grow">
+									  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+									  <i class="fa fa-snapchat-ghost fa-stack-1x icon-dark"></i>
+									</span>
+								</a></li>
+								<?php } ?>
+								<?php if($google_maps) { ?>
+								<li><a href="<?php echo $google_maps; ?>" target="_blank">
+									<span class="fa-stack fa-1x">
+									  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+									  <i class="fa fa-google-plus fa-stack-1x icon-dark"></i>
+									</span>
+								</a></li>
+								<?php } ?>
+								<?php if($instagram_account) { ?>
+								<li><a href="<?php echo $instagram_account; ?>" target="_blank">
+									<span class="fa-stack fa-1x">
+									  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+									  <i class="fa fa-instagram fa-stack-1x icon-dark"></i>
+									</span>
+								</a></li>
+								<?php } ?>
+								<?php if($facebook_profile) { ?>
+								<li><a href="<?php echo $facebook_profile; ?>" target="_blank">
+									<span class="fa-stack fa-1x">
+									  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+									  <i class="fa fa-facebook fa-stack-1x icon-dark"></i>
+									</span>
+								</a></li>
+								<?php } ?>
+								<?php if($youtube_link) { ?>
+								<li><a href="<?php echo $youtube_link; ?>" target="_blank">
+									<span class="fa-stack fa-1x">
+									  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+									  <i class="fa fa-youtube-play fa-stack-1x icon-dark"></i>
+									</span>
+								</a></li>
+								<?php } ?>
+								<?php if($twitter_feed) { ?>
+								<li><a href="<?php echo $twitter_feed; ?>" target="_blank">
+									<span class="fa-stack fa-1x">
+									  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+									  <i class="fa fa-twitter fa-stack-1x icon-dark"></i>
+									</span>
+								</a></li>
+								<?php } ?>
+							</ul>
+						</div>
 					</div>
-				</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
 
     </div>
   <?php 
-}
-
-	}
+		} else { // Else if there is no header
+ 		?>
+ 		<div class="container-fluid">
+	        <div class="row">
+			  <div class="col-xs-12 pt-3">
+	            <div class="row">
+	              <div class="col-xs-12 header-text-<?php echo $header_text_color; ?>">
+	                <?php 
+		            $subheader = get_post_meta( get_the_ID(), 'sub-header', true ); 
+		            ?>
+		            <h1 class="entry-title"><?php if($subheader) { echo " ".$subheader; } else { the_title(); }?></h1>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+ 		<?php 
+		}
+  }
   ?>

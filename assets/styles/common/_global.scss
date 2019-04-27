@@ -11,6 +11,7 @@ h1 {
 	color: $brand-grey;
 	margin-bottom: 30px;
 	word-break: break-word;
+	letter-spacing: -.05em;
 	
 	@media (max-width: 768px) {
 	    font-size: 3em;

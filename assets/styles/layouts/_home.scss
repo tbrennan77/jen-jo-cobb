@@ -186,8 +186,8 @@
 		font-family: $font-header-bold;
 		font-weight: 500;
 		line-height: 1.2;
-		margin-bottom: 40px;
-		margin-top: 40px;
+		margin-bottom: 20px;
+		margin-top: 20px;
 
 		@media (max-width: 992px) {
 		    font-size: 1.5em;
@@ -201,8 +201,8 @@
 	    font-family: $font-alt;
 	    font-weight: 700;
 	    line-height: 1.4;
-	    margin-bottom: 40px;
-	    margin-top: 40px;
+	    margin-bottom: 20px;
+	    margin-top: 0px;
 	}
 
 	.btn-danger {
@@ -229,7 +229,8 @@
 }
 .news-and-media h3,
 .pop-out h3,  
-.merch-column h2 {
+.merch-column h2,
+.home h3 {
 	font-family: futura-pt-bold,sans-serif;
 	font-size: 2em;
 	line-height: 1.5;
@@ -242,6 +243,9 @@
 }
 .pop-out h3 {
 	margin-bottom: 0px;
+}
+.home h3 {
+	display: block;
 }
 .merch-column h2 {
 	text-align: center;
