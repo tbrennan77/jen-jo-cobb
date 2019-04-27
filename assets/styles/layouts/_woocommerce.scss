@@ -1,0 +1,212 @@
+.woocommerce-result-count {
+	font-weight: bold;
+}
+.woocommerce .woocommerce-ordering select {
+	background-color: #fff;
+}
+.woocommerce ul.products li.product .button,
+.single-product .woocommerce button.button.alt {
+	font-family: $font-header-bold;
+    -webkit-border-top-left-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-bottomright: 25px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    text-transform: none;
+    color: $brand-dk-purple !important;
+    font-size: 1em;
+    letter-spacing: -.01em;
+    font-weight: 900;
+    text-transform: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+    background-color: #fff;
+    border: 3px solid $brand-pink;
+
+    @media (max-width: 992px) {
+        max-width: 90%;
+        width: 100%;
+    }
+}
+.woocommerce ul.products li.product .button:hover,
+.single-product .woocommerce button.button.alt:hover {
+	background-color: $brand-grey;
+	color: $color-font-white !important;
+}
+.woocommerce ul.products li.product, 
+.woocommerce-page ul.products li.product {
+	text-align: center;
+	background-color: $color-font-white;
+	border-radius: 10px;
+	border: 2px solid $brand-dk-purple;
+	padding-bottom: 20px;
+}
+.woocommerce ul.products li.product a img {
+	padding: 20px;
+}
+.woocommerce ul.products li.product .woocommerce-loop-product__title, {
+	font-weight: bold;
+	font-family: $font-header-bold;
+	color: $brand-dk-purple;
+}
+.woocommerce ul.products li.product .price {
+	font-weight: bold;
+	font-family: $font-header-bold;
+}
+.tb-product-loop-wrap li.product {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    margin: 10px;
+}
+.single-product .main .full-width {
+	background: transparent !important;
+	margin-top: 50px; 
+
+	.byline {
+		display: none;
+	}
+	.updated {
+		display: none;
+	}
+}
+.single-product, 
+.cart-collaterals {
+	main footer {
+		display: none;
+	}
+	div.product div.images .woocommerce-product-gallery__wrapper {
+		padding: 20px;
+	    background: #fff;
+	    border: 3px solid $brand-dk-purple;
+	    border-radius: 10px;
+	}
+	button.button.alt {
+		font-family: $font-header-bold;
+	    -webkit-border-top-left-radius: 25px;
+	    -webkit-border-bottom-right-radius: 25px;
+	    -moz-border-radius-topleft: 25px;
+	    -moz-border-radius-bottomright: 25px;
+	    border-top-left-radius: 20px;
+	    border-bottom-right-radius: 20px;
+	    padding: 10px;
+	    text-transform: none;
+	    color: $brand-dk-purple !important;
+	    font-size: 1em;
+	    letter-spacing: -.01em;
+	    font-weight: 900;
+	    text-transform: none;
+	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+	    background-color: #fff;
+	    border: 3px solid $brand-pink;
+
+	    @media (max-width: 992px) {
+	        max-width: 90%;
+	        width: 100%;
+	    }
+	}
+	button.button.alt:hover {
+		background-color: $brand-grey;
+		color: $color-font-white !important;
+	}
+	.quantity .qty {
+	    min-width: 100px;
+	    text-align: center;
+	    display: block;
+	    height: 45px;
+	    padding: 5px;
+	    font-weight: bold;
+	    font-family: $font-header-bold;
+	    border: 3px solid #ccc;
+	}
+	h2 {
+		font-family: futura-pt-bold,sans-serif;
+	    font-size: 3em;
+	    line-height: 1;
+	    text-transform: uppercase;
+	    letter-spacing: -.02em;
+	    text-align: center;
+	    color: $brand-dk-purple;
+	    display: inline-block; 
+
+	    @media (max-width: 992px) {
+		    font-size: 2em;
+		    line-height: 1;
+		}
+	} 
+	h2:after {
+	    content: ""; /* This is necessary for the pseudo element to work. */ 
+	    display: block; /* This will put the pseudo element on its own line. */
+	    margin: 0 auto; /* This will center the border. */
+	    width: 40%; /* Change this to whatever width you want. */
+	    padding-top: 10px; /* This creates some space between the element and the border. */
+	    border-bottom: 5px solid $brand-pink; /* This creates the border. Replace black with whatever color you want. */
+	    float: left;
+
+	    @media (max-width: 992px) {
+		    width: 100%;
+		}
+	}
+	h3  {
+		font-family: $font-header-bold;
+		font-size: 2em;
+		line-height: 1.5;
+		text-transform: uppercase;
+		letter-spacing: -.02em;
+		text-align: center;
+		color: $brand-dk-purple;
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	h3:after {
+	    content: ""; /* This is necessary for the pseudo element to work. */ 
+	    display: block; /* This will put the pseudo element on its own line. */
+	    margin: 0 auto; /* This will center the border. */
+	    width: 40%; /* Change this to whatever width you want. */
+	    padding-top: 10px; /* This creates some space between the element and the border. */
+	    border-bottom: 5px solid $brand-pink; /* This creates the border. Replace black with whatever color you want. */
+	    float: left;
+	}
+}
+
+.woocommerce-Price-amount{
+	font-weight: bold;
+	font-family: $font-header-bold;
+	font-size: 2em;
+}
+.woocommerce div.product p.stock {
+	font-weight: bold;
+	font-family: $font-header-bold;
+	font-size: 1em;
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+	float: left;
+}
+.woocommerce-checkout {
+	.woocommerce input[type="text"] {
+		border: 2px solid #dcddde;
+	    min-height: 50px;
+	    padding: 5px 10px;
+	    border-radius: 5px;
+	}
+	h3  {
+		font-family: $font-header-bold;
+		font-size: 1em;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: -.02em;
+		text-align: center;
+		color: $brand-dk-purple;
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	h3:after {
+	    content: ""; /* This is necessary for the pseudo element to work. */ 
+	    display: block; /* This will put the pseudo element on its own line. */
+	    margin: 0 auto; /* This will center the border. */
+	    width: 40%; /* Change this to whatever width you want. */
+	    padding-top: 10px; /* This creates some space between the element and the border. */
+	    border-bottom: 5px solid $brand-pink; /* This creates the border. Replace black with whatever color you want. */
+	    float: left;
+	}
+}
